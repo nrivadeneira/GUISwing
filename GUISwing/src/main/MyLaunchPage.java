@@ -33,9 +33,9 @@ public class MyLaunchPage implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 
 		if (e.getSource()==myButton) {
-			MyNewWindow newWindow = new MyNewWindow(); 
-			// call the MyNewWindow class
-			
+			frame.dispose(); // new window will only open once; this code will close us of of our frame, in this case our MyLaunchPage frame
+			MyNewWindow newWindow = new MyNewWindow(); // call the MyNewWindow class
+						
 		}
 		
 	}
